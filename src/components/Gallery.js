@@ -3,30 +3,33 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/col';
 import ImageFrame from './ImageFrame';
-import groupImgOne from '../images/gimg1.jpg';
-import groupImgTwo from '../images/gimg2.jpg';
-import groupImgThree from '../images/gimg3.jpg';
-import groupImgFour from '../images/gimg4.jpg';
+import Reveal from './Reveal';
 
-const Gallery = () =>{
-    const images = [groupImgOne, groupImgTwo, groupImgThree, groupImgFour];
-
+const Gallery = ({ images }) => {
+    const delays = [0.6, 0.8, 0.9, 1.0, 1.2]
     const imageElements = images.map((image, index) => {
         return (
-            <ImageFrame 
-                key={index}
-                img={image}
-            />
+            <Col s={4}>
+                <Reveal delay={delays[index]}>
+                    <ImageFrame 
+                        key={index}
+                        img={image}
+                    />
+                </Reveal>
+            </Col>
+           
         )
     });
 
     return (
         <Container fluid className="gallery-container">
-            <Container>
+            <h1 className="text-center">THANK YOU</h1>
+            <Container className="overflow-hidden">
                 <Row>
-                    <Col>
-                        {imageElements}
-                    </Col>
+                    {imageElements}
+                </Row>
+                <Row className="pt-5 pb-3">
+                    {imageElements}
                 </Row>
             </Container>
         </Container>
