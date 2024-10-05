@@ -11,7 +11,7 @@ const Reveal = ({ children, delay = 0 }) => {
         if (isInView) {
             mainControls.start("visible")
         }
-    }, [isInView])
+    }, [isInView, mainControls])
 
 
 

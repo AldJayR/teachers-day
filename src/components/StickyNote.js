@@ -12,7 +12,7 @@ const StickyNote = ({ content, delay, sender }) => {
         if (isInView) {
             mainControls.start("visible")
         }
-    }, [isInView])
+    }, [isInView, mainControls])
 
 
 
