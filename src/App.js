@@ -9,9 +9,13 @@ import groupImgOne from './images/gimg1.jpg';
 import groupImgTwo from './images/gimg2.jpg';
 import groupImgThree from './images/gimg3.jpg';
 import groupImgFour from './images/gimg4.jpg';
+import groupImgFive from './images/gimg5.jpeg';
+import groupImgSix from './images/gimeg6.jpeg';
+import groupImgSeven from './images/gimg7.jpeg';
+import groupImgEight from './images/gimg8.jpeg'
 
 function App() {
-  const images = [groupImgOne, groupImgTwo, groupImgThree, groupImgFour]
+  const images = [groupImgOne, groupImgTwo, groupImgThree, groupImgFour, groupImgFive, groupImgSix, groupImgSeven, groupImgEight];
 
   return (
     <>

@@ -24,10 +24,7 @@ const Gallery = ({ images }) => {
         <Container fluid className="gallery-container">
             <h1 className="text-center">THANK YOU</h1>
             <Container className="overflow-hidden">
-                <Row>
-                    {imageElements}
-                </Row>
-                <Row className="pt-5 pb-3">
+                <Row className="gy-5">
                     {imageElements}
                 </Row>
             </Container>

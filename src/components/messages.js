@@ -44,7 +44,7 @@ export const notes = [
         sender: "Steeven"
     },
     {
-        message: "placeholder",
+        message: "sa napakaganda, napakafresh at napakagaling naming teacher maamshiee joanaaa, happy teacher's day po.",
         sender: "Sherilyn"
     }
 ]

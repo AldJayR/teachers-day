@@ -92,8 +92,11 @@ header {
 }
 
 .class-image img {
-  max-width: 100%;
+  width: 250px;
+  max-width: 250px;
   overflow: hidden;
+  height: 200px;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
