@@ -14,7 +14,7 @@ export default function Notes() {
             </Reveal>
             <ul className="mt-5">
                 {notes.map((item, index) => {
-                    const delayTime = 0.2 * index;
+                    const delayTime = (0.2 * index) % notes.length;
                     return (
                             <StickyNote
                                 content={item.message} sender={item.sender} delay={delayTime} />
