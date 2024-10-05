@@ -16,8 +16,8 @@ const Reveal = ({ children, delay = 0 }) => {
 
 
     return (
-        <div ref={ref} style={{ position: "relative" }}>
             <motion.div
+                ref={ref}
                 variants={{
                     hidden: { opacity: 0, y: 75 },
                     visible: { opacity: 1, y: 0 },
@@ -28,7 +28,6 @@ const Reveal = ({ children, delay = 0 }) => {
             >
                 {children}
             </motion.div>
-        </div>
     )
 }
 

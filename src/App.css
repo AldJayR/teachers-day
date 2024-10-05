@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reenie+Beanie&display=swap');
+
 
 body {
   overflow-x: hidden;
@@ -24,7 +25,10 @@ header {
   position: relative;
   text-align: center;
   z-index: -2;
-  background: no-repeat center center/cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 25px;
   padding-bottom: 10px;
 }
@@ -80,6 +84,7 @@ header {
 
 .gallery-container img {
   transition: transform 500ms ease-out;
+  cursor: pointer;
 }
 
 .gallery-container img:hover {
@@ -100,7 +105,6 @@ header {
   .teacher-name-front, .teacher-name-back {
     top: 25%;
     left: 15%;
-
   }
 }
 
@@ -125,4 +129,18 @@ header {
     position: relative;
   
   }
+}
+
+.message-header {
+  /* Our Messages to You */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  letter-spacing: 0.12em;
+  background: linear-gradient(90deg, #ED6EA0 0%, #EC8C69 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

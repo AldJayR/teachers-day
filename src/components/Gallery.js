@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/col';
+import Col from 'react-bootstrap/Col';
 import ImageFrame from './ImageFrame';
 import Reveal from './Reveal';
 
@@ -9,10 +9,9 @@ const Gallery = ({ images }) => {
     const delays = [0.6, 0.8, 0.9, 1.0, 1.2]
     const imageElements = images.map((image, index) => {
         return (
-            <Col s={4}>
-                <Reveal delay={delays[index]}>
+            <Col xs={12} sm={6} md={4} lg={3} key={index}>
+                <Reveal delay={delays[index % delays.length]}>
                     <ImageFrame 
-                        key={index}
                         img={image}
                     />
                 </Reveal>
