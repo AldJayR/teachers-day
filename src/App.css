@@ -154,3 +154,7 @@ header {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+footer {
+  background: linear-gradient(90deg, #DD5E89 0%, #F7BB97 100%);
+}
