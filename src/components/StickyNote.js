@@ -28,7 +28,7 @@ const StickyNote = ({ content, delay, sender }) => {
             animate={mainControls}
             transition={{ duration: 0.5, ease: "easeOut", delay: delay }}
         >
-            <a href="#" className="sticky-anchor">
+            <a href="/" className="sticky-anchor">
             <p>{content}</p>
             <strong>- {sender}</strong>
             </a>
