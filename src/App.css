@@ -101,6 +101,7 @@ header {
     font-size: 5rem;
     line-height: 100px;
   }
+  
 
   .teacher-name-front, .teacher-name-back {
     top: 25%;
@@ -109,6 +110,8 @@ header {
 }
 
 @media (max-width: 575px) {
+
+
   .teacher-name-front h2, .teacher-name-back h2 {
     /* Text */
     font-family: 'Anton';
@@ -119,15 +122,22 @@ header {
     letter-spacing: 0.2em;
   }
 
+  .teacher-name-back h2 {
+    display: none;
+  }
+
   .hero-section img {
     height: 250px;
     width: 250px;
-    align-self: flex-end;
+  }
+
+  .name {
+    width: 90%;
+
   }
 
   .teacher-name-front, .teacher-name-back {
     position: relative;
-  
   }
 }
 
