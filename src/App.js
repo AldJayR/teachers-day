@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import Gallery from './components/Gallery'
+import { Footer } from './components/Footer'
 import Notes from './components/Notes'
 import groupImgOne from './images/gimg1.jpg';
 import groupImgTwo from './images/gimg2.jpg';
@@ -18,6 +19,7 @@ function App() {
       <Hero />
       <Gallery images={images}/>
       <Notes />
+      <Footer />
     </>
   )
 }

@@ -13,8 +13,8 @@ export default function Notes() {
                 <h2 className="message-header mt-5 text-center">Our Messages to You</h2>
             </Reveal>
             <ul className="mt-5">
-                {notes.map((item, index) => {
-                    const delayTime = (0.2 * index) % notes.length;
+                {notes.map((item) => {
+                    const delayTime = (0.2 * Math.random());
                     return (
                             <StickyNote
                                 content={item.message} sender={item.sender} delay={delayTime} />

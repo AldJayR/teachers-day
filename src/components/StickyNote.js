@@ -15,8 +15,6 @@ const StickyNote = ({ content, delay, sender }) => {
     }, [isInView, mainControls])
 
 
-
-
     return (
         <motion.li
             ref={ref}
@@ -28,9 +26,9 @@ const StickyNote = ({ content, delay, sender }) => {
             animate={mainControls}
             transition={{ duration: 0.5, ease: "easeOut", delay: delay }}
         >
-            <a href="/" className="sticky-anchor">
-            <p>{content}</p>
-            <strong>- {sender}</strong>
+            <a href="/" onClick={e => e.preventDefault()} className="sticky-anchor">
+                <p>{content}</p>
+                <strong>- {sender}</strong>
             </a>
         </motion.li>
     )

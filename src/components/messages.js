@@ -38,5 +38,13 @@ export const notes = [
     {
         message: "Happy teacher's day sa reyna ng java at web🥳",
         sender: "Ardee"
+    },
+    {
+        message: "Happy Teacher's Day, Ma'am! Your patience and dedication make a world of difference in our lives. Thank you for everything! GOW LABARN",
+        sender: "Steeven"
+    },
+    {
+        message: "placeholder",
+        sender: "Sherilyn"
     }
 ]
